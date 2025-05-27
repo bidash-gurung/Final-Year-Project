@@ -1,0 +1,22 @@
+/* Styles for the note section */
+.note {
+  background-color: #f9f9f9; /* Light grey background */
+  border-left: 5px solid #745ddb; /* Blue left border for emphasis */
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin-left: 3%;
+}
+
+.note strong {
+  color: #745ddb; /* Blue color for keywords */
+}
+
+.note p {
+  margin: 0;
+  line-height: 1.6;
+}

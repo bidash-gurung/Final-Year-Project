@@ -1,0 +1,41 @@
+.grid-graphs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.graph-box {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  width: 100%;
+}
+
+.graph-title {
+  color: black;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .grid-graphs-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .graph-box {
+    height: auto;
+    padding: 0.75rem;
+  }
+
+  .graph-box .recharts-responsive-container {
+    width: 100% !important;
+    height: 400px !important;
+  }
+}

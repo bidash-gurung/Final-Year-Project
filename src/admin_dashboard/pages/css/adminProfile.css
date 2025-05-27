@@ -1,0 +1,190 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.profile-container {
+  display: flex;
+  gap: 50px;
+  min-height: calc(100vh - 100px);
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Align items to the center */
+  width: 100%;
+}
+
+.headWrapper {
+  background-color: #111827;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.headWrapper h1 {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: clamp(20px, 5vw, 28px);
+}
+
+.profile-form,
+.change-password-form {
+  background: #fff;
+
+  min-height: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.inputWrapper {
+  width: calc(100% - 17px);
+  display: flex;
+  flex-direction: column;
+}
+.inputFieldContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.change-password-form h2 {
+  font-size: clamp(18px, 5vw, 24px);
+  width: 100%;
+  text-align: center;
+}
+label {
+  /* font-weight: bold; */
+  margin-top: 8px;
+  font-size: clamp(14px, 5vw, 16px);
+  align-self: flex-start;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-btn,
+.reset-btn,
+.save-btn {
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #7b61ff;
+}
+.edit-btn:hover,
+.save-btn:hover {
+  background: #08c65a;
+}
+.reset-btn {
+  background: #e74c3c;
+
+  height: 1cm;
+}
+
+.save-btn {
+  background: #6c5ce7;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.profilemodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profilemodal label {
+  font-size: 16px;
+}
+.profilemodal-content h2 {
+  justify-content: center;
+  align-items: center;
+}
+.profilemodal-content {
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 250px;
+  position: relative; /* Add this line to position the cross button relative to the profilemodal */
+}
+
+.profilemodal-content input,
+.profilemodal-content select {
+  padding: 8px;
+  width: 100%;
+}
+
+.profilemodal-buttons {
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.save-button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  background-color: #6c5ce7;
+}
+
+.save-button:hover {
+  background-color: #08c65a;
+}
+
+.cancel-btn {
+  width: 50%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(48, 47, 47);
+  cursor: pointer;
+  background-color: #cbcad1;
+}

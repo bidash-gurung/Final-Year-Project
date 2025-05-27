@@ -1,0 +1,152 @@
+.user-management-content {
+  padding: 20px;
+  /* background-color: #f5f5f5; */
+}
+
+.user-management-content h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 20px;
+}
+.heading {
+  text-align: center;
+  color: white;
+  background: #111827;
+}
+
+.addUser {
+  background-color: #745ddb;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+  left: 87.6%;
+  top: 50px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.addUser:hover {
+  background-color: #08c65a;
+}
+
+.users-table {
+  padding: 40px;
+  width: 90%;
+  background-color: white;
+  text-align: left;
+}
+
+.users-table th,
+.users-table td {
+  font-size: 16px;
+  padding: 10px 20px; /* Adds padding inside each cell */
+  border-bottom: 1px solid #ddd; /* Optional: Adds a subtle line for row separation */
+}
+
+.users-table th {
+  background-color: #111827;
+  color: white;
+  font-weight: bold;
+}
+
+.users-table tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.delete-btn {
+  color: #db3f1c;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal label {
+  font-size: 16px;
+}
+.modal-content h2 {
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 250px;
+  position: relative; /* Add this line to position the cross button relative to the modal */
+}
+
+.modal-content input,
+.modal-content select {
+  padding: 8px;
+  width: 100%;
+}
+
+.modal-button {
+  display: flex;
+  padding-top: 30px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.add-button {
+  background-color: #745ddb;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  width: 3cm;
+  border-radius: 5px;
+}
+.add-button:hover {
+  background-color: #08c65a;
+}
+/* Cross button style */
+.close-btn {
+  font-size: 24px;
+  border: none;
+  background: transparent;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.reset-button {
+  background: #db3f1c;
+  color: rgb(242, 242, 242);
+  border: 1px solid black;
+  padding: 8px;
+  cursor: pointer;
+  width: 3cm;
+  border-radius: 5px;
+  border: none;
+}
+.reset-button:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 769px) {
+  .addUser {
+    left: 85%;
+  }
+}

@@ -1,0 +1,132 @@
+.toggle-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+  width: 100px;
+  height: 50px;
+}
+
+.toggle-option {
+  color: #333;
+  line-height: 50px;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.toggle-option:first-of-type {
+  left: 0;
+}
+
+.toggle-option:last-of-type {
+  right: 0;
+}
+
+.toggle-circle {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s ease;
+}
+
+.toggle-input:checked + .toggle-label {
+  background-color: #007bff;
+}
+
+.toggle-input:checked + .toggle-label .toggle-option:first-of-type {
+  color: #fff;
+}
+
+.toggle-input:checked + .toggle-label .toggle-option:last-of-type {
+  color: #333;
+}
+
+.toggle-input:checked + .toggle-label .toggle-circle {
+  left: 55px;
+}
+.Userfilter-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  max-width: 90%; /* Set a maximum width */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  overflow: hidden; /* Prevent overflow */
+}
+.graph-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.summary-item {
+  border: 1px solid black;
+  background-color: #f9f9f9;
+  border-left: 5px solid #745ddb;
+  padding: 15px;
+  width: 80%; /* adjust this value as needed */
+  margin: 30px auto 0 auto; /* top margin + auto left/right = center */
+  text-align: center;
+
+  border-radius: 5px;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.no-comparison {
+  border: 1px solid black;
+  background-color: #f9f9f9;
+  border-left: 5px solid #745ddb;
+  padding: 15px;
+  width: 80%; /* adjust this value as needed */
+  margin: 30px auto 0 auto; /* top margin + auto left/right = center */
+  text-align: center;
+
+  border-radius: 5px;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .graph-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+  .summary-item {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .toggle-switch-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .default-graph {
+  }
+}

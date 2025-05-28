@@ -36,22 +36,53 @@ This is an AI-based dashboard developed to support the Prime Minister's Office (
   - Download filtered tables in Excel or PDF format
 
 ---
+# Future Scope
 
-## 📁 Project Structure
+## 🚀 AI Chatbot Integration
 
-```bash
-PMO-AI-Dashboard/
-├── client/                  # React.js Frontend
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       └── App.jsx
-├── server/                  # Node.js Backend
-│   ├── controllers/
-│   ├── routes/
-│   └── index.js
-├── ai/                      # AI Logic (Python)
-│   ├── quarterly_analysis.py
-│   └── trend_detector.py
-├── uploads/                 # Excel file uploads
-└── README.md
+Integrate a conversational AI chatbot to allow users to interact using natural language. This feature will improve user experience by enabling them to ask questions and receive instant responses.
+
+### Example Queries:
+- "Show GDP growth in Q2 2023"
+- "Compare inflation rates for the last two quarters"
+
+### Potential Tools:
+- OpenAI API
+- Dialogflow
+- Rasa
+
+*Integration with a Node.js backend will facilitate seamless communication between the chatbot and the data sources.*
+
+---
+
+## 📡 Automated Alerts & Reports
+
+Implement functionality for generating weekly and monthly PDF reports. Users will receive email or SMS alerts when significant changes occur in key indicators, ensuring they stay informed.
+
+### Features:
+- Automated report generation in PDF format.
+- Email and SMS notifications for critical updates.
+
+---
+
+## 🌐 Real-Time Data Synchronization
+
+Connect with external APIs, such as the National Statistics Bureau, to automatically fetch and update indicator data. This will ensure that users have access to the most current information without manual intervention.
+
+### Benefits:
+- Up-to-date data availability.
+- Enhanced reliability and accuracy of information.
+
+---
+
+## 📱 Mobile Dashboard Interface
+
+Develop a mobile-friendly version of the dashboard using React Native or Flutter. This will allow users to access real-time data and insights on-the-go, improving accessibility and user engagement.
+
+### Goals:
+- Create a responsive design for mobile devices.
+- Ensure real-time data access and user-friendly navigation.
+
+---
+
+*These enhancements aim to elevate user experience, improve data accessibility, and ensure timely information delivery. Stay tuned for updates as we implement these exciting features!*
